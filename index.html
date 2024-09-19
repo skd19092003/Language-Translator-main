@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Language Translator -  MADE BY SKD</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<STyle>
+  body {
+    margin: 0;
+    padding: 0;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    
+}
+</STyle>
+<body>
+  <video autoplay muted loop id="background-video">
+    <source src="SEASIDE LANDSCAPE.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<div class="content">
+
+  
+  <div class="container w-[90vw] mx-auto min-h-screen py-[30px]">
+   <h1 class="text-2xl">Language Translator</h1>
+
+
+   <div class="flex mt-5 items-start justify-between">
+    
+    <div class="fromCon w-[49%]">
+      <select name="fromSelect" id="fromSelect">
+        <option value="en" label="English">English</option>
+        <option value="es" label="Spanish">Spanish</option>
+        <option value="fr" label="French">French</option>
+        <option value="de" label="German">German</option>
+        <option value="zh" label="Chinese">Chinese</option>
+        <option value="jp" label="Japanese">Japanese</option>
+        <option value="ru" label="Russian">Russian</option>
+        <option value="it" label="Italian">Italian</option>
+        <option value="pt" label="Portuguese">Portuguese</option>
+        <option value="ar" label="Arabic">Arabic</option>
+        <option value="ko" label="Korean">Korean</option>
+        <option value="hi" label="Hindi">Hindi</option>
+        <option value="bn" label="Bengali">Bengali</option>
+        <option value="pa" label="Punjabi">Punjabi</option>
+        <option value="jv" label="Javanese">Javanese</option>
+        <option value="ms" label="Malay">Malay</option>
+        <option value="vi" label="Vietnamese">Vietnamese</option>
+        <option value="ta" label="Tamil">Tamil</option>
+        <option value="ur" label="Urdu">Urdu</option>
+        <option value="fa" label="Persian">Persian</option>
+      </select>
+
+      <p class="text-[gray]">From</p>
+      <textarea 
+      name="from" 
+      id="from" 
+      placeholder="Enter Your Text..."
+      class="w-full outline-1 focus:outline-blue-500 min-h-[150px] border-[1px] border-gray-300 p-[10px] rounded-[10px] mt-2"
+      ></textarea>
+    </div>
+    <div class="toCon w-[49%]">
+      <select name="toSelect" id="toSelect">
+        <option value="en" label="English">English</option>
+        <option value="es" label="Spanish">Spanish</option>
+        <option value="fr" label="French">French</option>
+        <option value="de" label="German">German</option>
+        <option value="zh" label="Chinese">Chinese</option>
+        <option value="jp" label="Japanese">Japanese</option>
+        <option value="ru" label="Russian">Russian</option>
+        <option value="it" label="Italian">Italian</option>
+        <option value="pt" label="Portuguese">Portuguese</option>
+        <option value="ar" label="Arabic">Arabic</option>
+        <option value="ko" label="Korean">Korean</option>
+        <option value="hi" label="Hindi">Hindi</option>
+        <option value="bn" label="Bengali">Bengali</option>
+        <option value="pa" label="Punjabi">Punjabi</option>
+        <option value="jv" label="Javanese">Javanese</option>
+        <option value="ms" label="Malay">Malay</option>
+        <option value="vi" label="Vietnamese">Vietnamese</option>
+        <option value="ta" label="Tamil">Tamil</option>
+        <option value="ur" label="Urdu">Urdu</option>
+        <option value="fa" label="Persian">Persian</option>
+      </select>
+
+      <p class="text-[gray]">To</p>
+      <textarea 
+      name="to" 
+      id="to" 
+      readonly
+      placeholder="Your Translation Here..."
+      class="w-full outline-1 focus:outline-blue-500 min-h-[150px] border-[1px] border-gray-300 p-[10px] rounded-[10px] mt-2"
+      ></textarea>
+
+      <div class="moreTran">
+        <p>More Translations</p>
+        
+      </div>
+    </div>
+
+   </div>
+
+   <button class="translate p-[10px] mt-2 hover:bg-blue-600 min-w-[160px] bg-blue-500 text-white border-0 rounded-[5px]">Translate Text</button>
+
+
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
